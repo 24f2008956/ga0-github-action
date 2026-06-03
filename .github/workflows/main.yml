@@ -1,19 +1,19 @@
+
+```yaml
 name: Validate and Deploy
 
 on:
-push:
-branches:
-- main
-workflow_dispatch:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
-test:
-runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
 
-  ```
-  steps:
-    - uses: actions/checkout@v4
-  
-    - name: '24f2008956@ds.study.iitm.ac.in'
-      run: echo "Hello, world!"
-  ```
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: '24f2008956@ds.study.iitm.ac.in'
+        run: echo "Hello, world!"
