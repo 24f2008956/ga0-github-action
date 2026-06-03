@@ -2,16 +2,18 @@ name: Validate and Deploy
 
 on:
 push:
-branches: [ main ]
+branches:
+- main
 workflow_dispatch:
 
 jobs:
 test:
 runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v4
 
 ```
+steps:
+  - uses: actions/checkout@v4
+
   - name: '24f2008956@ds.study.iitm.ac.in'
     run: echo "Hello, world!"
 ```
